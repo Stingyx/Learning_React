@@ -7,7 +7,7 @@ export const LayoutMain = ()=>{
            <header>
             <CardList />
             </header>
-            <main>
+            <main className="flex-1 p-2">
                 <Outlet/>
             </main>
         </div>

@@ -17,7 +17,6 @@ useEffect(()=>{
            <div className="h-48 w-48 rounded-full bg-white border-8 boder-[#121212] flex justify-center items-center shadow-lg">
                 <span className="text-4xl font-semibold">{segundos}</span>
            </div>
-           
         </div>
     )
 }

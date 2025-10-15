@@ -9,6 +9,8 @@ import { PerfilPage } from "../pages/PerfilPage";
 import { ConfigurationPage } from "../pages/ConfigurationPage";
 import { LayoutMain } from "../layouts/LayoutMain";
 import { ApisPage } from "../pages/ApisPage";
+import { FormulariosPages } from "../pages/FormulariosPages";
+import { ZustandPage } from "../pages/ZustandPage";
 
 
 export const MyRoutes = () =>(
@@ -25,6 +27,8 @@ export const MyRoutes = () =>(
                 <Route path="Perfil/:id" element={<PerfilPage/>}/>
                 <Route path="Configuration" element={<ConfigurationPage/>}/>
                 </Route>
+                <Route path="/formularios" element={<FormulariosPages/>} />
+                <Route path="Zustand" element={<ZustandPage/>} />
             </Route>
             <Route path="*" element = {<Page404/>} />
         </Routes>    
