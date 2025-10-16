@@ -11,7 +11,7 @@ import { LayoutMain } from "../layouts/LayoutMain";
 import { ApisPage } from "../pages/ApisPage";
 import { FormulariosPages } from "../pages/FormulariosPages";
 import { ZustandPage } from "../pages/ZustandPage";
-
+import { CRUDsupabase } from "../pages/CRUDsupabase";
 
 export const MyRoutes = () =>(
     <BrowserRouter>
@@ -29,6 +29,7 @@ export const MyRoutes = () =>(
                 </Route>
                 <Route path="/formularios" element={<FormulariosPages/>} />
                 <Route path="Zustand" element={<ZustandPage/>} />
+                <Route path={"/Crudsupabase"} element={<CRUDsupabase/>} />
             </Route>
             <Route path="*" element = {<Page404/>} />
         </Routes>    

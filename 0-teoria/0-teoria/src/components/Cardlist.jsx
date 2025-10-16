@@ -30,6 +30,10 @@ export const CardList = () =>{
             to:"/Zustand"
 
         },
+        {title:"CRUDSupabase",
+            to:"/Crudsupabase"
+
+        },
     ]
     return (
         <div className="flex flex-col gap-4">
