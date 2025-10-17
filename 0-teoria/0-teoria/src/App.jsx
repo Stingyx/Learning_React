@@ -5,21 +5,21 @@ import {
   useQueryClient,
   QueryClient,
   QueryClientProvider,
-} from '@tanstack/react-query'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+} from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
-function App(){
+function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
-      <MyRoutes/>
+      <MyRoutes />
     </QueryClientProvider>
-  )
+  );
 }
 
-export default App; 
+export default App;
 
 // const frutas=["manzana","banana","pera"]
 // const productos=[{
@@ -36,21 +36,21 @@ export default App;
 //   destacado:false
 // }]
 // return(
-  //   <div className="bg-black h-screen text-white">
-  //     <HolaMundo/>
-  //     <Contador/>
-  //     {
-  //       frutas.map((item,index)=>{
-  //         return(<div key={index} className="text-white">
-  //           {item}
-  //         </div>)
-  //       })
-  //     }
-  //     <span>Productos</span>
-  //     <section className="flex flex-col gap-4">
-  //       {productos.map((item,index)=>(
-  //         <CardProducto key={index} item={item} />))}
-  //     </section>
-      
-  //   </div>
-  // )
+//   <div className="bg-black h-screen text-white">
+//     <HolaMundo/>
+//     <Contador/>
+//     {
+//       frutas.map((item,index)=>{
+//         return(<div key={index} className="text-white">
+//           {item}
+//         </div>)
+//       })
+//     }
+//     <span>Productos</span>
+//     <section className="flex flex-col gap-4">
+//       {productos.map((item,index)=>(
+//         <CardProducto key={index} item={item} />))}
+//     </section>
+
+//   </div>
+// )
